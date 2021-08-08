@@ -1,0 +1,10 @@
+<?php
+
+namespace {{namespace}};
+
+use {{baseController}};
+
+class {{controllerClassName}} extends ModuleController
+{
+    protected $moduleName = '{{moduleName}}';
+}

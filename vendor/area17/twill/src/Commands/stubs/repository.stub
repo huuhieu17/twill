@@ -1,0 +1,17 @@
+<?php
+
+namespace {{namespace}};
+
+{{repositoryImports}}
+use {{baseRepository}};
+use {{modelClass}};
+
+class {{repositoryClassName}} extends ModuleRepository
+{
+    {{repositoryTraits}}
+
+    public function __construct({{modelName}} $model)
+    {
+        $this->model = $model;
+    }
+}

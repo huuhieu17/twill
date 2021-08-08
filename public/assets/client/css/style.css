@@ -1,0 +1,19 @@
+nav.bg-dark{
+    background-color: #0062cc !important;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-family: monospace;
+    font-size:28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+.row#content{
+    min-height: 90vh;
+}

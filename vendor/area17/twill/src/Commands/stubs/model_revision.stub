@@ -1,0 +1,10 @@
+<?php
+
+namespace {{namespace}};
+
+use {{baseRevisionModel}};
+
+class {{modelRevisionClassName}} extends Revision
+{
+    protected $table = "{{modelName}}_revisions";
+}

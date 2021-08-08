@@ -1,0 +1,18 @@
+<?php
+
+namespace {{namespace}};
+
+use {{baseRequest}};
+
+class {{requestClassName}} extends Request
+{
+    public function rulesForCreate()
+    {
+        return [];
+    }
+
+    public function rulesForUpdate()
+    {
+        return [];
+    }
+}

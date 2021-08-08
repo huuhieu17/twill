@@ -1,0 +1,11 @@
+<?php
+
+namespace {{namespace}};
+
+use {{baseTranslationModel}};
+use {{modelClassWithNamespace}};
+
+class {{modelTranslationClassName}} extends Model
+{
+    protected $baseModuleModel = {{modelClassName}}::class;
+}

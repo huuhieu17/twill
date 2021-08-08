@@ -1,0 +1,16 @@
+{
+    "name": "twill-docs",
+    "scripts": {
+        "dev": "concurrently \"watch 'node generate_readme.js' .sections --wait=2 --interval=0.1\" \"vuepress dev\"",
+        "build": "node generate_readme.js && vuepress build",
+        "prod": "npm run build && mkdir -p .vuepress/docs/api && cp -R ../docs-api/build/* .vuepress/docs/api"
+    },
+    "devDependencies": {
+        "concurrently": "5.1.0",
+        "watch": "^1.0.2"
+    },
+    "dependencies": {
+        "@vuepress/plugin-google-analytics": "1.3.1",
+        "vuepress": "1.3.1"
+    }
+}

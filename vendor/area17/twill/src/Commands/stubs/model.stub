@@ -1,0 +1,59 @@
+<?php
+
+namespace {{namespace}};
+
+{{modelImports}}
+use {{baseModel}};
+
+class {{modelClassName}} extends Model {{modelImplements}}
+{
+    {{modelTraits}}
+
+    protected $fillable = [
+        'published',
+        'title',
+        'description',{{hasPosition}}
+        'position',{{/hasPosition}}
+    ];
+    {{hasTranslation}}
+    public $translatedAttributes = [
+        'title',
+        'description',
+        'active',
+    ];
+    {{/hasTranslation}}{{hasSlug}}
+    public $slugAttributes = [
+        'title',
+    ];
+    {{/hasSlug}}{{hasMedias}}
+    public $mediasParams = [
+        'cover' => [
+            'desktop' => [
+                [
+                    'name' => 'desktop',
+                    'ratio' => 16 / 9,
+                ],
+            ],
+            'mobile' => [
+                [
+                    'name' => 'mobile',
+                    'ratio' => 1,
+                ],
+            ],
+            'flexible' => [
+                [
+                    'name' => 'free',
+                    'ratio' => 0,
+                ],
+                [
+                    'name' => 'landscape',
+                    'ratio' => 16 / 9,
+                ],
+                [
+                    'name' => 'portrait',
+                    'ratio' => 3 / 5,
+                ],
+            ],
+        ],
+    ];{{/hasMedias}}
+}

@@ -1,0 +1,10 @@
+<?php
+
+namespace {{namespace}};
+
+use {{baseSlugModel}};
+
+class {{modelSlugClassName}} extends Model
+{
+    protected $table = "{{modelName}}_slugs";
+}
